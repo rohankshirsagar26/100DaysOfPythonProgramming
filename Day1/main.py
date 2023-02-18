@@ -12,3 +12,7 @@ print('Hello' + ' ' + 'Rohan')
 # Input Function
 input('What is your name? ')
 print('Hello ' + input('What is your name?\n'))
+
+# Length of string using len function
+print(len('string'))
+print((len(input('Please enter your name\n'))))
