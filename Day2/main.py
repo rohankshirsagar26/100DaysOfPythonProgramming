@@ -53,3 +53,12 @@ isWinning = True
 print('Your score is ' + str(score) + ', your height is ' + str(height) + ', you are winning ' + str(isWinning))
 
 print(f'Your score is {score}, your height is {height}, you are winning {isWinning}')
+
+# tip calculator program
+
+print('Welcome to the tip calculator.')
+billAmount = input('What was the total bill? $')
+tipPercentage = input('What percentage tip would you like to give? 10, 12, or 15? ')
+noOfPeople = input('How many people to split the bill? ')
+eachPersonContribution = (float(billAmount) / int(noOfPeople)) * ((100+int(tipPercentage))/100)
+print(f'Each person should pay: ${round(eachPersonContribution, 2)}')
