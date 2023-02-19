@@ -1,6 +1,11 @@
 #Data Types
 
-num_char = len(input('What is your name? '))
+# string conversion
 
-# type checking
-print(type(num_char))
+print('Your name has ' + str(num_char) + ' characters')
+
+a = 123
+print(type(a))
+
+a = str(123)
+print(type(a))
