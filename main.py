@@ -1,11 +1,11 @@
 #Data Types
 
-# mathematical functions
+# f-String
 
-print(8/3)
-print(int(8/3))
-print(round(8/3))
-print(round(8/3, 2))
+score = 0
+height = 1.8
+isWinning = True
 
-print(8/3, 8//3)
-print(type(8/3), type(8//3))
+print('Your score is ' + str(score) + ', your height is ' + str(height) + ', you are winning ' + str(isWinning))
+
+print(f'Your score is {score}, your height is {height}, you are winning {isWinning}')
