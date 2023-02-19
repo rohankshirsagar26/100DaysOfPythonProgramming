@@ -1,11 +1,11 @@
 #Data Types
 
-# string conversion
+# mathematical functions
 
-print('Your name has ' + str(num_char) + ' characters')
+print(8/3)
+print(int(8/3))
+print(round(8/3))
+print(round(8/3, 2))
 
-a = 123
-print(type(a))
-
-a = str(123)
-print(type(a))
+print(8/3, 8//3)
+print(type(8/3), type(8//3))
