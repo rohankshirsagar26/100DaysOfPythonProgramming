@@ -1,9 +1,17 @@
-# Randomisation
+# List
 
-import random
+fruits = [ 'mango', 'apple', 'banana', 'kiwi', 'dragonfruit']
 
-random_integer = random.randint(1, 10)
-print(random_integer)
+print(fruits[0], fruits[-1])
 
-random_float = random.random()
-print(round(random_float, 2))
+fruits[1] = 'jackfruit'
+
+print(fruits)
+
+fruits.append('strawberry')
+
+print(fruits)
+
+fruits.extend(['pineapple', 'orange'])
+
+print(fruits)
