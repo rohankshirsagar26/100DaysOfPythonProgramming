@@ -1,17 +1,10 @@
-# List
+# Nested List
 
-fruits = [ 'mango', 'apple', 'banana', 'kiwi', 'dragonfruit']
+dirty_dozen = ["Strawberries", "Spinach", "Kale", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears", "Tomatoes", "Celery", "Potatoes"]
 
-print(fruits[0], fruits[-1])
+fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]
+vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
 
-fruits[1] = 'jackfruit'
+dirty_dozen = [fruits, vegetables]
 
-print(fruits)
-
-fruits.append('strawberry')
-
-print(fruits)
-
-fruits.extend(['pineapple', 'orange'])
-
-print(fruits)
+print(dirty_dozen)
