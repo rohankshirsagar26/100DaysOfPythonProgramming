@@ -1,6 +1,4 @@
-# for loop
+# for loop with range
 
-fruits = ["Apple", "Peach", "Pear", "Strawberry", "Mango", "Kiwi"]
-
-for fruit in fruits:
-  print(fruit)
+for number in range(1, 11):
+  print(number)
