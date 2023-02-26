@@ -4,24 +4,26 @@ https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freebor
 
 # Python Code
 
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
 def step_one():
     move()
     turn_left()
     move()
-    turn_left()
-    turn_left()
-    turn_left()
+    turn_right()
 
 def step_two():
     move()
-    turn_left()
-    turn_left()
-    turn_left()
+    turn_right()
     move()
     turn_left()
 
-for n in range(1, 13):
-    if n%2==1:
-        step_one()
-    else:
-        step_two()
+def one_hurdle():
+    step_one()
+    step_two()
+
+for step in range(6):
+    one_hurdle()
