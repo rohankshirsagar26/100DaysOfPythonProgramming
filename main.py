@@ -27,8 +27,6 @@ def one_hurdle():
     
 number_of_hurdles = 6
    
-while number_of_hurdles > 0:
+while not at_goal():
     one_hurdle()
-    if at_goal() == 'true':
-        number_of_hurdles = 0
     number_of_hurdles -= 1
