@@ -88,7 +88,7 @@ while not end_of_game:
       if letter == guess:
           display[position] = letter
   
-  print(display)
+  print(display) 
 
   if "_" not in display:
     end_of_game = True
