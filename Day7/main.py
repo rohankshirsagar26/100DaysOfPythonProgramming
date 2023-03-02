@@ -91,4 +91,4 @@ while not end_of_game:
   print(display)
 
   if "_" not in display:
-    end_of_game = True
+    end_of_game = True 
