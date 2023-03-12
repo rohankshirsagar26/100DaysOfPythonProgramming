@@ -85,5 +85,5 @@ while '_' in display:
           display[position] = letter
   
   print(display)
-  
+ 
 print('You win.')
