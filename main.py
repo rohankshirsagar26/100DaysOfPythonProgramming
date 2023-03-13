@@ -1,29 +1,91 @@
-#Step 3
+#Step 4
 
 import random
-word_list = ["aardvark", "baboon", "camel"]
+
+stages = ['''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ / \  |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ /    |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+ /|   |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+  |   |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+      |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+=========
+''']
+
+import random
+word_list = ["camel", "camel", "camel"]
 chosen_word = random.choice(word_list)
 word_length = len(chosen_word)
-
+lives = 6
 #Testing code
-print(f'Pssst, the solution is {chosen_word}.')
+print(f'Pssst, the solution is {chosen_word}.\n')
 
-#Create blanks
 display = []
+
 for _ in range(word_length):
     display.append('_')
 
-#TODO-1: - Use a while loop to let the user guess again. The loop should only stop once the user has guessed all the letters in the chosen_word and 'display' has no more blanks ("_"). Then you can tell the user they've won.
-
-while '_' in display:
+while '_' in display and lives > -1:
+  blanks = display.count('_')
   guess = input("Guess a letter: ").lower()
-  
-  #Check guessed letter
   for position in range(word_length):
       letter = chosen_word[position]
       if letter == guess:
-          display[position] = letter
-  
-  print(display)
-  
-print('You win.')
+        display[position] = letter
+
+  print(display, '\n')
+  if blanks == display.count('_'):
+    print(stages[lives])
+    lives -= 1
+ 
+if lives == -1:
+  print('You lose.')
+else:
+  print('You win.')
