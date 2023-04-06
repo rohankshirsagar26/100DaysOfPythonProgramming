@@ -23,3 +23,11 @@ print("Bug: ", programming_dictionary["Bug"])
 for key in programming_dictionary:
   print(key)
   print(programming_dictionary[key])
+
+# Creating empty dictionary
+empty_dictonary = {}
+print("empty_dictionary = ", empty_dictonary)
+
+# Wiping out existing dictionary
+programming_dictionary = {}
+print("programming_dictionary = ", programming_dictionary)
