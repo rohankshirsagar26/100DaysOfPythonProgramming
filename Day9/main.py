@@ -18,3 +18,8 @@ print(programming_dictionary)
 print("Bug: ", programming_dictionary["Bug"])
 programming_dictionary["Bug"] = "A moth in a computer."
 print("Bug: ", programming_dictionary["Bug"])
+
+# Looping through a dictionary
+for key in programming_dictionary:
+  print(key)
+  print(programming_dictionary[key])
