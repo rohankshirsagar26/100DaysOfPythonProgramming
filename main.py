@@ -13,3 +13,8 @@ programming_dictionary["Dictionary"] = "A set of key value pairs"
 
 # Printing dictionary
 print(programming_dictionary)
+
+# Edit an item in dictionary
+print("Bug: ", programming_dictionary["Bug"])
+programming_dictionary["Bug"] = "A moth in a computer."
+print("Bug: ", programming_dictionary["Bug"])
