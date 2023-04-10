@@ -1,7 +1,8 @@
-# Local Scope
+# Global Scope
+
+potion_strength = 2
 
 def drink_potion():
-    potion_strength = 2
     print(potion_strength)
 
 drink_potion()
