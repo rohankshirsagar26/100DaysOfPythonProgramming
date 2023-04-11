@@ -1,11 +1,5 @@
-# Modifying global scope variable
+# Global Constants
 
-enemies = 1
-
-def increase_enemies():
-  global enemies
-  enemies = 2
-  print(f"enemies inside function: {enemies}")
-
-increase_enemies()
-print(f"enemies outside function: {enemies}")
+PI = 3.142857
+URL = "https://google.com"
+TWITTER_HANDLE = "rohan_speakss"
