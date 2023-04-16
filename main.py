@@ -10,3 +10,8 @@ print(timmy)
 my_screen = Screen()
 print(my_screen.canvheight)
 my_screen.exitonclick()
+
+# Call methods associated with Object
+timmy.shape("turtle")
+timmy.color("green")
+timmy.forward(100)
