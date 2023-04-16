@@ -16,3 +16,16 @@ my_screen.exitonclick()
 timmy.shape("turtle")
 timmy.color("green")
 timmy.forward(100)
+
+# 3rd party PyPi Library
+
+from prettytable import PrettyTable
+
+table = PrettyTable()
+
+table.add_column("Pokemon Name", ["Pikachu", "Squirtle", "Charmander"])
+table.add_column("Yype", ["Electric", "Water", "Fire"])
+
+table.align = "l"
+
+print(table)
